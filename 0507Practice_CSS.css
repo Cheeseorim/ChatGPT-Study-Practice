@@ -64,18 +64,12 @@ section {
   overflow: hidden;
 }
 
-#home img{
-  position: absolute;
+section img{
+  position: relative;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#grammar img{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
 }
 
 section h2 {
