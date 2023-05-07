@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHURIMOO's Easy Korean</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>SHURIMOO's Easy Korean</h1>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#inquiry">Inquiry</a></li>
+				<li><a href="#word">Daily Word</a></li>
+				<li><a href="#grammar">Grammar Hacks</a></li>
+				<li><a href="#studytip">Tips</a></li>
+			</ul>
+		</nav>
+    <form action="#" method="get">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search">
+      <button type="submit">GO</button>  
+     </form>
+	</header>
+
+	<main>
+		<section id="home">
+			<h2>Welcome to SHURIMOO's Easy Korean!</h2>
+			<p>Welcome to our website, where we aim to provide foreigners with an easy and friendly way to learn Korean. Every day, we will introduce one Korean word and its usage, as well as provide explanations for confusing grammar and helpful tips for learning the language. Join us on this exciting journey to discover the beauty of the Korean language!</p>
+			<img src="home.jpg" alt="한국어 학습 사이트 홈 화면 이미지">
+		</section>
+
+
+<section>
+    <h2>Daily Word</h2>
+    <div class="word-of-the-day">
+        <div class="word-info">
+            <p class="word"><span>오늘의 단어:</span> <span id="word"></span></p>
+            <p class="meaning"><span>뜻:</span> <span id="meaning"></span></p>
+            <p class="example"><span>예문:</span> <span id="example"></span></p>
+        </div>
+    </div>
+</section>
+       <script>
+      const words = [
+    {
+        word: "사랑",
+        meaning: "마음이 서로 얽혀 하나가 되는 것.",
+        example: "사랑은 서로를 이해하는 것입니다."
+    },
+    {
+        word: "열정",
+        meaning: "매우 강한 감정.",
+        example: "그는 자신의 일에 대한 열정이 매우 컸습니다."
+    },
+    // 더 많은 단어를 추가할 수 있습니다.
+];
+
+// 랜덤한 인덱스를 생성하여 words 배열에서 단어를 선택합니다.
+const randomIndex = Math.floor(Math.random() * words.length);
+const word = words[randomIndex];
+
+// 선택된 단어의 정보를 HTML에 적용합니다.
+document.getElementById("word").textContent = word.word;
+document.getElementById("meaning").textContent = word.meaning;
+document.getElementById("example").textContent = word.example;
+    </script>
+      
+		<section id="grammar">
+			<h2>Grammar Hacks</h2>
+			<h3>이제부터 '-ㄹ게' 쓸게!</h3>
+      <p></p>
+      <p>- 이 노래는 정말 좋아서, 내일 학교 가기 싫을 정도로 들을게.</p>
+      <p>- 먼저 먹을 거리가 떨어지지 않게, 바로 먹을게요.</p>
+      <p>한국어에서 '-ㄹ게'는 행동의 의지나 결심을 나타내기 위해 사용되는 표현입니다. 자신이 할 행동을 확신하고 결심한 상태에서 사용됩니다. 비슷한 표현으로 '-을게'가 있는데, 이는 결정한 행동을 나타내기 보다는 약속한 내용을 표현할 때 사용됩니다.</p>
+			<img src="grammar.jpg" alt="한국어 문법 정보 이미지">
+		</section>
+ 
+
+		<section id="studytip">
+			<h2>Tips</h2>
+      <h3>Tips for Learning Korean</h3>
+      <p></p>
+      <p>Immerse Yourself in the Language: Surround yourself with the language as much as possible. Watch Korean dramas, listen to K-pop, and read Korean books or websites.</p>
+      <p>Practice Daily: Consistent practice is key to improving your Korean language skills. Even just 10-15 minutes of practice every day can help you make progress.</p>
+      <p>Join a Korean Language Course: Joining a formal Korean language course can provide structure and accountability for your language learning journey.</p>
+    </section>
+    
+    <footer>
+      <p>If you have any inquiries, please feel free to contact us at the email address below.</p>
+			<p><a href="mailto:cheeseorim@gmail.com">cheeseorim@gmail.com</a></p>
+    </footer>
