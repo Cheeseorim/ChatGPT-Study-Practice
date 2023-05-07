@@ -68,8 +68,9 @@ section img{
   position: relative;
   bottom: 0;
   margin-top: 20px;
-  width: 100%;
-  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+  align-self: center;
 }
 
 section h2 {
